@@ -33,7 +33,7 @@ export default function Hero() {
       {/* ========================================================= */}
       <div className="absolute inset-0 -z-50">
         <Image
-          src="/images/693872.jpg"
+          src="/693872.jpg"
           alt=""
           fill
           priority

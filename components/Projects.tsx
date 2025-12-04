@@ -10,7 +10,7 @@ const PROJECTS = [
     description:
       "Portfolio using S3, Cloudfront, Route 53, and API Gateway. Built for speed and horizontal scaling.",
     stack: ["S3", "CLoudfront", "Route 53", "API Gateway"],
-    image: "/images/pexels.jpeg",
+    image: "/pexels.jpeg",
     url: "http://figarodesigns.com/",
   },
   {
@@ -18,7 +18,7 @@ const PROJECTS = [
     description:
       "High-performance marketing experience deployed on Next.js + TypeScript + Amplify with a polished, conversion-focused UI.",
     stack: ["Next.js", "TypeScript", "Amplify"],
-    image: "/images/pexels.jpeg",
+    image: "/pexels.jpeg",
     url: "https://github.com/Lubern5/fxt-aws-pro",
   },
   {
@@ -26,7 +26,7 @@ const PROJECTS = [
     description:
       "ESPN-inspired sports interface featuring real-time data blending, modern Next.js patterns, and AWS Amplify hosting.",
     stack: ["S3", "CLoudfront", "Route 53", "API Gateway"],
-    image: "/images/pexels.jpeg",
+    image: "/pexels.jpeg",
     url: "https://figarodesigns.com/sports/index.html",
   },
   {
@@ -34,7 +34,7 @@ const PROJECTS = [
     description:
       "Jenkins + GitHub Actions pipeline with Docker builds, security scanning, and structured promotion workflows.",
     stack: ["Jenkins", "Docker", "GH Actions"],
-    image: "/images/pexels.jpeg",
+    image: "/pexels.jpeg",
     url: "https://github.com/Lubern5/devops-fully-automated",
   },
 ];
