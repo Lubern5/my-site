@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Tailwind Base (Framework Import)
+   ========================================================================== */
+@import "tailwindcss";
+
+/* ==========================================================================
+   Design Tokens — Elite, Minimal, Professional
+   ========================================================================== */
+:root {
+  /* Layout */
+  --container: 1180px;
+  --radius: 16px;
+
+  /* Typography */
+  --font-display: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+
+  /* Neutral Palette — Linear / Vercel style */
+  --color-bg: #ffffff;
+  --color-surface: #f9fafb;
+  --color-border: #e5e7eb;
+  --color-text: #0f172a;
+  --color-muted: #0067f8;
+
+  /* Accents (kept neutral) */
+  --accent-primary: #0f172a;
+  --accent-soft: rgba(15, 23, 42, 0.08);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* ==========================================================================
+   Base Global Styles
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ==========================================================================
+   Layout Utilities
+   ========================================================================== */
+
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+/* ==========================================================================
+   Scrollbar — Minimal, Subtle, Premium
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9cbd2;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b6bd;
+}
+
+/* ==========================================================================
+   Noise Texture Overlay
+   ========================================================================== */
+
+.noise {
+  pointer-events: none;
+  opacity: 0.1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* ==========================================================================
+   Particle Animation (Hero Micro-Details)
+   ========================================================================== */
+
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: rgba(15, 23, 42, 0.25);
+  border-radius: 9999px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+/* ==========================================================================
+   Light Grid Background (Hero)
+   ========================================================================== */
+
+.grid-light {
+  opacity: 0.06;
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 70px 70px;
+}
+
+/* ==========================================================================
+   Soft Gradient Blobs (Ambient Glow)
+   ========================================================================== */
+
+.gradient-blob {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(60px);
+  opacity: 0.45;
+  animation: gradientShift 18s ease-in-out infinite alternate;
+  background:
+    radial-gradient(circle at 30% 30%, #1e293b, transparent 60%),
+    radial-gradient(circle at 70% 70%, #475569, transparent 55%);
+}
+
+/* Ambient Glow Animation */
+@keyframes gradientShift {
+  0% {
+    transform: translate3d(-12%, -12%, 0) scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate3d(6%, 10%, 0) scale(1.12);
+    opacity: 0.55;
+  }
+  100% {
+    transform: translate3d(14%, -8%, 0) scale(1.05);
+    opacity: 0.4;
+  }
+}
