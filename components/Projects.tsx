@@ -11,7 +11,7 @@ const PROJECTS = [
       "Portfolio using S3, Cloudfront, Route 53, and API Gateway. Built for speed and horizontal scaling.",
     stack: ["S3", "CLoudfront", "Route 53", "API Gateway"],
     image: "/pexelss.jpeg",
-    url: "http://figarodesigns.com/",
+    url: "http://l.figarodesigns.com/",
   },
   {
     title: "FXT Appliance Repair Website",
@@ -27,7 +27,7 @@ const PROJECTS = [
       "ESPN-inspired sports interface featuring real-time data blending, modern Next.js patterns, and AWS Amplify hosting.",
     stack: ["S3", "CLoudfront", "Route 53", "API Gateway"],
     image: "/pexelss.jpeg",
-    url: "https://figarodesigns.com/sports/index.html",
+    url: "https://l.figarodesigns.com/sports/index.html",
   },
   {
     title: "Automated CI/CD Pipeline",
